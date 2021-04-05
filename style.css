@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  height: 90vh;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 26px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 25px;
+  font-size: 15px;
+}
+
+main {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-element {
+  padding: 32px;
+}
+
+.sedans-card {
+  background-color: #e38826;
+}
+
+.suvs-card {
+  background-color: #006970;
+}
+
+.luxury-card {
+  background-color: #004241;
+}
+
+.learn-more {
+  margin-top: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 16px 32px;
+  border: solid 2px transparent;
+  outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.sedans-card .learn-more {
+  color: #e38826;
+}
+
+.sedans-card .learn-more:hover {
+  color: white;
+  border: solid 2px white;
+  background-color: #e38826;
+}
+
+.suvs-card .learn-more {
+  color: #006970;
+}
+
+.suvs-card .learn-more:hover {
+  color: white;
+  border: solid 2px white;
+  background-color: #006970;
+}
+
+.luxury-card .learn-more {
+  color: #004241;
+}
+
+.luxury-card .learn-more:hover {
+  color: white;
+  border: solid 2px white;
+  background-color: #004241;
+}
+
+@media (max-width: 900px) {
+  body {
+    height: auto;
+    padding: 40px 0;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

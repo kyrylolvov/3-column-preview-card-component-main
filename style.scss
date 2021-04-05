@@ -1,0 +1,111 @@
+// Primary Colors
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+// Neutral Colors
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$veryLighGray: hsl(0, 0%, 95%);
+
+// Typography
+$lexendDeca: "Lexend Deca", sans-serif;
+$bsd: "Big Shoulders Display", cursive;
+
+// Styles
+body {
+  margin: 0;
+  height: 90vh;
+  background-color: $veryLighGray;
+  font-family: $lexendDeca;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: $bsd;
+  font-size: 26px;
+}
+
+p {
+  color: $transparentWhite;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+main {
+  width: 800px;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-element {
+  padding: 32px;
+}
+
+.sedans-card {
+  background-color: $brightOrange;
+}
+
+.suvs-card {
+  background-color: $darkCyan;
+}
+
+.luxury-card {
+  background-color: $veryDarkCyan;
+}
+
+.learn-more {
+  margin-top: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: $veryLighGray;
+  font-family: $lexendDeca;
+  padding: 16px 32px;
+  border: solid 2px transparent;
+  outline: none;
+  transition: all 0.4s;
+}
+
+.sedans-card .learn-more {
+  color: $brightOrange;
+}
+
+.sedans-card .learn-more:hover {
+  color: white;
+  border: solid 2px white;
+  background-color: $brightOrange;
+}
+
+.suvs-card .learn-more {
+  color: $darkCyan;
+}
+
+.suvs-card .learn-more:hover {
+  color: white;
+  border: solid 2px white;
+  background-color: $darkCyan;
+}
+
+.luxury-card .learn-more {
+  color: $veryDarkCyan;
+}
+
+.luxury-card .learn-more:hover {
+  color: white;
+  border: solid 2px white;
+  background-color: $veryDarkCyan;
+}
+
+@media (max-width: 900px) {
+  body {
+    height: auto;
+    padding: 40px 0;
+  }
+  main {
+    flex-direction: column;
+    width: 70vw;
+  }
+}
